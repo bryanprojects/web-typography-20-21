@@ -46,9 +46,8 @@ Feel free to adjust the defaults to your needs.
 
 .voice3{
 	color:grey;
-	font-weight: bold;
 	font-size:1.7em;
-	font-family: brenner regular;
+	font-family: brenner sans regular;
 	font-style: italic;
 	letter-spacing: 2px;
 	opacity: 0.2;
@@ -181,12 +180,19 @@ Sounds.
 
 .sound9{
 	background-image: url("https://media.giphy.com/media/F9qCEnzEaYLu0/giphy.gif");
+	background-size: 1500px 300px;
 	background-repeat: no-repeat;
 }
 
 .sound10{
 	background-color: black;
+	background-image: none;
 }
+
+.sound10{
+	background-color: black;
+}
+
 
 iframe {
 	transition: 1s;
@@ -205,14 +211,11 @@ iframe {
 	animation: bounce.6s linear;
 }
 
-/*
+
 .sound9 iframe{
-	animation: grow 10s linear;
+	animation: grow 36s linear;
 }
 
-/*
-
-/*
 @keyframes grow{
 	0%{
 		transform: scale(1);
@@ -226,7 +229,7 @@ iframe {
 		transform:scale(1);
 	}
 }
-*/
+
 
 @keyframes shake{
 	0% {
@@ -236,7 +239,7 @@ iframe {
 	40%,
 	60%,
 	80%{
-		transform: translate(.8em);
+		transform: translate(.9em);
 	}
 	10%,
 	30%,
@@ -254,13 +257,13 @@ iframe {
 		transform: translate(0);
 	}
 	40%{
-		transform:translateY(-30px);
+		transform:translateY(-29px);
 	}
 	70%{
-		transform:translateY(-15px);
+		transform:translateY(-14px);
 	}
 	90%{
-		transform: translateY(-4px);
+		transform: translateY(-3px);
 	}
 }
 
@@ -337,6 +340,25 @@ iframe {
 }
 
 .sound8 #geluid4{
+	visibility: hidden;
+}
+
+#geluid5{
+	visibility: hidden;
+	color:white;
+	position: absolute;
+	font-size: 1.7em;
+	margin-left: 550px;
+	margin-top: 750px;
+	font-family: brenner mono;
+	text-transform: uppercase;
+}
+
+.sound9 #geluid5{
+	visibility: visible;
+}
+
+.sound10 #geluid5{
 	visibility: hidden;
 }
 
